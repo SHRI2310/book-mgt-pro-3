@@ -17,7 +17,6 @@ router.post('/books/:bookId/review', reviewController.createReview)
 router.put('/books/:bookId/review/:reviewId',reviewController.updateReview)
 router.delete('/books/:bookId/review/:reviewId',reviewController.deleteReview)
 
-
 router.all("/*",function(req,res){
     res.status(400).send({
         status:false,msg:"The endpoint is not correct"

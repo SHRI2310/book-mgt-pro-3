@@ -121,7 +121,7 @@ const userLogin = async function (req, res) {
         }
 
         if (!data.password){
-            return res.status(400).send({status:false,message: "passward is required "});
+            return res.status(400).send({status:false,message: "passwOrd is required "});
         }
       
       if(!pass(data.password)) return res.status(400).send({status:false,message : "password range should 8-15 and should not contain space"})

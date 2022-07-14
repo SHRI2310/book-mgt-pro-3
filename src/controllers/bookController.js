@@ -3,7 +3,6 @@ const bookModel = require("../models/bookModel");
 const reviewModel = require("../models/reviewModel");
 const mongoose = require("mongoose");
 
-
 const ObjectId = require('mongoose').Types.ObjectId;
 
 
@@ -394,11 +393,6 @@ const deleteBook = async function (req, res) {
   try {
     //console.log("hi");
     const bookId = req.params.bookId;
-
-
-
-
-    //=========================================================
     if (bookId != null) {
       r = isValidObjectId(bookId)
       // console.log(r)
